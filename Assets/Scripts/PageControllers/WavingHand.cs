@@ -18,7 +18,7 @@ public class WavingHand : MonoBehaviour
         }
     }
 
-    private void Update ()
+    private void Update()
     {
         if (armObject)
         {
