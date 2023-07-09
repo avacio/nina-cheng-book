@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ConstantRotation : MonoBehaviour
 {
-    [SerializeField] private float rotationSpeed = 1f;
+    [SerializeField] private float rotationSpeed = 25f;
     private void Update()
     {
         transform.Rotate(Vector3.back * Time.deltaTime * rotationSpeed);
