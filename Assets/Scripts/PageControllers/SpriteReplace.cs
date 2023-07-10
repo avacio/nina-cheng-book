@@ -19,7 +19,7 @@ public class SpriteReplace : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void OnEnable()
     {
         if (image)
         {
