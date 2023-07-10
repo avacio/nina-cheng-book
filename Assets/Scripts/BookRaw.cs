@@ -22,6 +22,10 @@ public class BookRaw : MonoBehaviour {
     public bool enableShadowEffect=true;
     //represent the index of the sprite shown in the right page
     public int currentPage = 0;
+    /// <summary>
+    /// Flipping the page increments index by 2
+    /// </summary>
+    public int nextPageIndex => currentPage + 2;
     public int TotalPageCount
     {
         get { return bookPages.Length; }
@@ -379,12 +383,24 @@ public class BookRaw : MonoBehaviour {
         else
         currentCoroutine = StartCoroutine(TweenTo(ebr, 0.15f, () => { Flip(); }));
     }
+
     void Flip()
     {
+        int newPage = currentPage;
         if (mode == FlipMode.RightToLeft)
-            currentPage += 2;
+            newPage += 2;
         else
-            currentPage -= 2;
+            newPage -= 2;
+        if (newPage < 0 || newPage > TotalPageCount)
+        {
+            // Cannot flip out of bounds
+            return;
+        }
+        else
+        {
+            currentPage = newPage;
+        }
+
         LeftNext.transform.SetParent(BookPanel.transform, true);
         Left.transform.SetParent(BookPanel.transform, true);
         LeftNext.transform.SetParent(BookPanel.transform, true);
