@@ -49,7 +49,10 @@ public class BookRaw : MonoBehaviour {
     public RawImage LeftNext;
     public RawImage Right;
     public RawImage RightNext;
-    public UnityEvent OnFlip;
+    /// <summary>
+    /// Passes the current page as a parameter
+    /// </summary>
+    public UnityEvent<int> OnFlip;
     float radius1, radius2;
     //Spine Bottom
     Vector3 sb;
@@ -393,7 +396,7 @@ public class BookRaw : MonoBehaviour {
         Shadow.gameObject.SetActive(false);
         ShadowLTR.gameObject.SetActive(false);
         if (OnFlip != null)
-            OnFlip.Invoke();
+            OnFlip.Invoke(currentPage);
     }
     public void TweenBack()
     {

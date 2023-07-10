@@ -16,9 +16,9 @@ public class AutoFlipRaw : MonoBehaviour {
             ControledBook = GetComponent<BookRaw>();
         if (AutoStartFlip)
             StartFlipping();
-        ControledBook.OnFlip.AddListener(new UnityEngine.Events.UnityAction(PageFlipped));
+        ControledBook.OnFlip.AddListener(new UnityEngine.Events.UnityAction<int>(PageFlipped));
 	}
-    void PageFlipped()
+    void PageFlipped(int currentPage)
     {
         isFlipping = false;
     }
