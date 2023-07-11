@@ -392,8 +392,6 @@ public class BookRaw : MonoBehaviour {
         else
             newPage -= 2;
 
-        int test = Mathf.Clamp(newPage, 0, TotalPageCount);
-        Debug.Log($"[{this.GetType().ToString()}] new page: {newPage}, test: {test}, return: {newPage == currentPage}");
         newPage = Mathf.Clamp(newPage, 0, TotalPageCount);
         if (newPage == currentPage)
         {
