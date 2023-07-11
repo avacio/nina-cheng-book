@@ -1,6 +1,7 @@
 # nina-cheng-book
 Happy birthday Nins, luvya mwah &lt;3
 
+## Live page: https://avacio.github.io/nina-cheng-book/
 Hand-drawn sprites were made using ibisPaint on tablet :)
 
 # Credits
