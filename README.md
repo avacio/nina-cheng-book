@@ -1,6 +1,7 @@
 # nina-cheng-book
 Happy birthday Nins, luvya mwah &lt;3
 
+Hand-drawn sprites were made using ibisPaint on tablet :)
 
 # Credits
 ## Peppa Pig Fan Font
@@ -29,3 +30,36 @@ https://www.flaticon.com/free-icon/light_740845?term=lightning+bolt&page=1&posit
 
 Superhero city wallpaper:
 https://www.pxfuel.com/en/desktop-wallpaper-jusrg/download
+
+# Page 13-14
+Magic wand icon:
+Effect icons created by Those Icons - Flaticon
+https://www.flaticon.com/free-icon/magic-wand_2089189?k=1688944181388
+
+Library background:
+https://pngtree.com/freebackground/an-old-library-has-wooden-step-leading-to-stairs_2486870.html
+
+# Page 15-16
+Microphone icon:
+https://www.flaticon.com/free-icon/microphone_464195
+
+Stage background:
+https://www.pxfuel.com/en/desktop-wallpaper-fvdhd
+
+# Page 17-18
+City burning bg
+http://www.thingstransform.com/2012/08/a-fire-rises-why-millennials-will-let.html
+
+Meeting room bg
+https://www.pinterest.com/pin/494129390357218073/
+
+Scroll image
+https://www.pngegg.com/en/png-psmyk/download
+
+
+# Misc
+Nice France BG
+https://www.freewalkingtournice.com/what-are-some-known-facts-about-nice-france/
+
+Japan bg
+https://www.pxfuel.com/en/desktop-wallpaper-ixgtt
