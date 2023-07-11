@@ -391,15 +391,16 @@ public class BookRaw : MonoBehaviour {
             newPage += 2;
         else
             newPage -= 2;
-        if (newPage < 0 || newPage > TotalPageCount)
+
+        int test = Mathf.Clamp(newPage, 0, TotalPageCount);
+        Debug.Log($"[{this.GetType().ToString()}] new page: {newPage}, test: {test}, return: {newPage == currentPage}");
+        newPage = Mathf.Clamp(newPage, 0, TotalPageCount);
+        if (newPage == currentPage)
         {
-            // Cannot flip out of bounds
+            // Already at limits or same page
             return;
         }
-        else
-        {
-            currentPage = newPage;
-        }
+        currentPage = newPage;
 
         LeftNext.transform.SetParent(BookPanel.transform, true);
         Left.transform.SetParent(BookPanel.transform, true);

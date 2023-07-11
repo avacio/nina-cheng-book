@@ -29,6 +29,8 @@ public class AutoFlipRaw : MonoBehaviour {
     public void FlipRightPage()
     {
         if (isFlipping) return;
+        Debug.Log($"[{this.GetType().ToString()}] ControledBook.nextPageIndex >= ControledBook.TotalPageCount {ControledBook.nextPageIndex >= ControledBook.TotalPageCount}" +
+                  $"next index: {ControledBook.nextPageIndex}, total page count: {ControledBook.TotalPageCount}");
         if (ControledBook.nextPageIndex >= ControledBook.TotalPageCount) return;
         isFlipping = true;
         float frameTime = PageFlipTime / AnimationFramesCount;
