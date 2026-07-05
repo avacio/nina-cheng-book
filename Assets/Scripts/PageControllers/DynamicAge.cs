@@ -24,6 +24,7 @@ public class DynamicAge : MonoBehaviour
             ageYears--;
         }
 
+        Debug.Log($"[{this.GetType().ToString()}] Dynamic Age: {ageYears}");
         textLabel.text = ageYears.ToString();
     }
 }
