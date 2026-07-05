@@ -14,8 +14,16 @@ public class DynamicAge : MonoBehaviour
 
     private void Start()
     {
-        var ageYears = (DateTime.Now - BIRTH_DATE).Days / 365f;
-        string liveAgeString = Math.Floor(ageYears).ToString();
-        textLabel.text = liveAgeString;
+        DateTime today = DateTime.Today;
+
+        int ageYears = today.Year - BIRTH_DATE.Year;
+
+        if (today.Month < BIRTH_DATE.Month ||
+            today.Month == BIRTH_DATE.Month && today.Day < BIRTH_DATE.Day)
+        {
+            ageYears--;
+        }
+
+        textLabel.text = ageYears.ToString();
     }
 }
